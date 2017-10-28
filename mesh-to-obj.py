@@ -1,3 +1,6 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
 import sys
 
 def main(argv):
@@ -24,7 +27,7 @@ def main(argv):
             out_data = "";
             out_data += "o Scenery\n"
 
-            print("Converting Vertices…")
+            print("Converting Vertices...")
             for x in range(5,number_of_vertices+5):
                 line = filedata[x]
                 coords = line.split(' ')
@@ -34,7 +37,7 @@ def main(argv):
 
             out_data += "s off\n"
 
-            print("Converting Triangles…")
+            print("Converting Triangles...")
             for x in range(number_of_vertices+number_of_normals+11,number_of_vertices+number_of_normals+11+number_of_triangles):
                 line = filedata[x]
                 indexes = line.split(' ')
